@@ -32,4 +32,4 @@ Repository URL:
 
 Visibility: public.
 
-The initial combined model archive is `releases/hp-ipaq-hx4700-Thin-Max-v0.1.0.zip`. It includes all five supplied STL files, licensing, documentation and Thin previews. Use `tools/Build-ModelArchive.ps1` for future model archives and update both README download tables when publishing a new version.
+The latest combined model archive is `releases/hp-ipaq-hx4700-Thin-Max-v0.1.1.zip`. It includes all five supplied STL files, licensing, updated documentation and Thin previews. The initial v0.1.0 archive remains available. Use `tools/Build-ModelArchive.ps1` for future model archives and update both README download tables when publishing a new version.

@@ -1,6 +1,8 @@
 # Model archives
 
-[Download Thin & Max v0.1.0](hp-ipaq-hx4700-Thin-Max-v0.1.0.zip)
+[Download Thin & Max v0.1.1](hp-ipaq-hx4700-Thin-Max-v0.1.1.zip)
+
+v0.1.1 updates the English and Czech documentation with the provisional Max electronics placement, PCB design progress, five-board cost estimates and the plan to use off-the-shelf modules. All STL files are unchanged from [v0.1.0](hp-ipaq-hx4700-Thin-Max-v0.1.0.zip).
 
 This combined archive contains five original STL files:
 
@@ -25,7 +27,7 @@ Each model archive will contain:
 Add the final models to `models/Thin/`, `models/Max/` and `models/Shared/`, then run from the repository root:
 
 ```powershell
-./tools/Build-ModelArchive.ps1 -Variant Thin-Max -Version v0.1.1
+./tools/Build-ModelArchive.ps1 -Variant Thin-Max -Version v0.1.2
 ```
 
 Use the actual release version. The script requires real, non-empty STL inputs and refuses to overwrite an existing archive. Update the download tables in both READMEs when adding a release.

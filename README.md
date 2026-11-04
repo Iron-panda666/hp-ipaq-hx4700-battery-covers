@@ -8,8 +8,8 @@
 
 | Variant | Model download |
 | --- | --- |
-| **Thin** | [Download STL ZIP — Thin & Max, v0.1.0](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.0.zip) |
-| **Max** | [Download STL ZIP — Thin & Max, v0.1.0](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.0.zip) |
+| **Thin** | [Download STL ZIP — Thin & Max, v0.1.1](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.1.zip) |
+| **Max** | [Download STL ZIP — Thin & Max, v0.1.1](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.1.zip) |
 
 The combined archive contains both cover variants and the supplied **Holder**, **Lever** and **Lever cover** STL files. Compatible cells, assembly instructions and print settings will be documented once confirmed.
 
@@ -31,9 +31,13 @@ The printed cover does not replace that board. A replacement BMS or a complete r
 
 ## Charging electronics — work in progress
 
-The charging electronics are under development. The initial approach is to assemble a solution from readily available modules and components sourced from suppliers such as AliExpress, Mouser, TME or Amazon. The final module selection and wiring have not been published yet.
+The charging electronics are under development. For the **Max** cover, the area marked in yellow in the design will probably house the **charging PCB, USB-C PD module and connector**. This placement is still provisional.
 
-A more integrated, intelligent charging board is also being considered, potentially with **USB-C Power Delivery (PD)** and **mutual exclusion between USB-C charging and the iPAQ's 22-pin connector**:
+I've more or less worked out the custom PCB design, with a bit of help from **Claude and Codex**. However, the current estimates for getting just **five boards made and assembled** range from **US$185 to US$555 (about €165–495)**, depending on the assembly service. That is a steep price for only five boards.
+
+So for now, I'll use **off-the-shelf modules and parts from AliExpress, Amazon, Mouser, DigiKey or TME**. The final module selection and wiring have not been published yet.
+
+For the custom board, I'm considering **USB-C Power Delivery (PD)** and **mutual exclusion between USB-C charging and the iPAQ's 22-pin connector**:
 
 - When the 22-pin connector is connected, the USB-C charging path would be disabled.
 - When USB-C charging is active, charging through the 22-pin connector would be blocked.
