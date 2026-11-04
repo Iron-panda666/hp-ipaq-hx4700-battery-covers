@@ -10,7 +10,7 @@ Tohle jsou moje náhradní kryty baterie pro **HP iPAQ hx4700** ve dvou verzích
 
 **[Stáhnout Thin + Max — ZIP se STL, v0.1.3](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.3.zip)**
 
-V jednom ZIPu jsou oba kryty a díly **Holder**, **Lever** a **Lever cover**, celkem pět STL souborů. Přibalil jsem i licenci, popis projektu a náhledy Thin. Nabíjecí elektronika součástí balíčku není.
+V jednom ZIPu jsou oba kryty a díly **Holder**, **Lever** a **Lever cover**, celkem pět STL souborů. Přibalil jsem i licenci, popis projektu a náhledy Thin a Max. Nabíjecí elektronika součástí balíčku není.
 
 Balíček a jeho kontrolní součet najdeš ve složce [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases). Ověřené možnosti článků, úplný návod na sestavení a podrobný tiskový profil doplním, až budou vyřešené.
 
@@ -19,6 +19,14 @@ Balíček a jeho kontrolní součet najdeš ve složce [`releases/`](https://git
 ![Kryt Thin — pohled zevnitř](docs/images/Thin01.png)
 
 [Měření šířky](docs/images/Thin02.png) · [Měření detailu](docs/images/Thin03.png)
+
+## Jak vypadá Max
+
+![Kryt Max — pohled zevnitř se žlutě označeným prostorem pro elektroniku](docs/images/Max03.png)
+
+Do žlutě označeného místa plánuji nabíjecí PCB, modul USB-C PD a konektor. Rozmístění se ještě může změnit.
+
+[Měření délky](docs/images/Max01.png) · [Měření šířky](docs/images/Max02.png)
 
 ## Tisk a pružina
 

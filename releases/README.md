@@ -20,7 +20,7 @@ Each model archive will contain:
 - `LICENSE` — the complete CC BY-NC 4.0 legal text.
 - `ATTRIBUTION.md` — creator credit and license information.
 - `README.md` and `README.cs.md` — project status and the original BMS requirement.
-- `docs/images/` — the supplied Thin CAD screenshots referenced by the READMEs.
+- `docs/images/` — the supplied Thin and Max CAD screenshots referenced by the READMEs.
 
 ## Build an archive locally
 

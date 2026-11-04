@@ -10,7 +10,7 @@ These are my replacement battery covers for the **HP iPAQ hx4700**, in two versi
 
 **[Download Thin + Max — STL ZIP, v0.1.3](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.3.zip)**
 
-One ZIP contains both covers, plus the **Holder**, **Lever** and **Lever cover** parts — five STL files in total. The license, project notes and Thin previews are included too. The charging electronics aren't part of the download.
+One ZIP contains both covers, plus the **Holder**, **Lever** and **Lever cover** parts — five STL files in total. The license, project notes and Thin and Max previews are included too. The charging electronics aren't part of the download.
 
 The download and its checksum are in [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases). I'll add the confirmed cell options, full assembly instructions and a detailed print profile as the project develops.
 
@@ -19,6 +19,14 @@ The download and its checksum are in [`releases/`](https://github.com/Iron-panda
 ![Thin cover — inside view](docs/images/Thin01.png)
 
 [Width measurement](docs/images/Thin02.png) · [Detail measurement](docs/images/Thin03.png)
+
+## A look at Max
+
+![Max cover — inside view with the planned electronics space marked in yellow](docs/images/Max03.png)
+
+The yellow area is where I'm thinking of putting the charging PCB, USB-C PD module and connector. The layout may still change.
+
+[Length measurement](docs/images/Max01.png) · [Width measurement](docs/images/Max02.png)
 
 ## Printing and the spring
 
