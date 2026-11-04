@@ -4,14 +4,22 @@
 
 Náhradní kryty baterie pro **HP iPAQ hx4700**, určené k 3D tisku, ve dvou variantách: **Thin** a **Max**. Součástí projektu je také vývoj nabíjecího řešení.
 
+## Stav vývoje — nejde o finální verzi
+
+**Jde o rozpracovaný prototyp, nikoli o dokončený návrh.** Má ještě několik much:
+
+- Ostrý roh ještě potřebuje doladit.
+- Prostor pro elektroniku se pravděpodobně změní podle bodů pro připevnění PCB a umístění konektoru.
+- Geometrie krytu i uspořádání elektroniky se mohou v dalších revizích změnit.
+
 ## Varianty krytů a stažení
 
 | Varianta | Stažení modelu |
 | --- | --- |
-| **Thin** | [Stáhnout STL ZIP — Thin a Max, v0.1.1](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.1.zip) |
-| **Max** | [Stáhnout STL ZIP — Thin a Max, v0.1.1](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.1.zip) |
+| **Thin** | [Stáhnout STL ZIP — Thin a Max, v0.1.2](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.2.zip) |
+| **Max** | [Stáhnout STL ZIP — Thin a Max, v0.1.2](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.2.zip) |
 
-Společný archiv obsahuje obě varianty krytu a dodané STL díly **Holder**, **Lever** a **Lever cover**. Kompatibilní články, postup sestavení a parametry tisku budou doplněny po ověření.
+Společný archiv obsahuje obě varianty krytu a dodané STL díly **Holder**, **Lever** a **Lever cover**. Kompatibilní články, úplný postup sestavení a podrobný tiskový profil budou doplněny po ověření.
 
 Modely jsou distribuovány v ZIP archivech obsahujících STL soubory, úplné znění licence v souboru `LICENSE`, informace o autorství v `ATTRIBUTION.md` a dokumentaci projektu. Archivy a kontrolní součty jsou ve složce [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases). Nabíjecí elektronika není součástí balíčku.
 
@@ -22,6 +30,22 @@ Dodané snímky z CADu zachycují variantu Thin.
 ![Kryt Thin — vnitřní pohled](docs/images/Thin01.png)
 
 [Měření šířky](docs/images/Thin02.png) · [Měření detailu](docs/images/Thin03.png)
+
+## Tisk
+
+Projekt jsem tiskl metodou **FDM na tiskárně Bambu Lab X1C s tryskou o průměru 0,2 mm**. Pro jemnější povrch a detaily, zejména u drobných dílků, může být vhodnější **SLA resinová tiskárna**.
+
+## Potřebná tažná pružina
+
+K vytištěným dílům je potřeba malá **tažná pružina (extension spring)**.
+
+| Parametr | Požadavek |
+| --- | --- |
+| Vnější průměr | **Nejvýše 1,8 mm; ideálně 1,5 mm** |
+| Celková délka | **4–5 mm** |
+| Zakončení | **Uzavřená očka na obou koncích; nikoli otevřené háčky** |
+| Poloha oček | **Obě očka vystředěná v ose pružiny**, nikoli vyosená do strany |
+| Průměr drátu | Přibližně **0,2 mm** |
 
 ## Co je nyní potřeba pro baterii
 
@@ -49,6 +73,8 @@ Jde o zvažované cíle vývoje. USB-C PD ani přepínání vstupů zatím nejso
 
 Modely krytů a dokumentace projektu jsou pod licencí **Creative Commons Uveďte původ–Neužívejte komerčně 4.0 Mezinárodní (CC BY-NC 4.0)**. Je možné je sdílet a upravovat pro nekomerční účely za podmínek licence. Při sdílení uveďte autora **Iron-panda666**, zachovejte dodané informace o autorství a licenci, připojte odkaz na licenci a označte provedené změny.
 
+Licence se vztahuje pouze na autorská a obdobná práva, která je autor projektu oprávněn licencovat. Neuděluje práva k cizím ochranným známkám, logům ani patentům. Viz [článek 2(b) licence](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en#s2b).
+
 - [Úplné znění licence](LICENSE)
 - [České shrnutí licence](https://creativecommons.org/licenses/by-nc/4.0/deed.cs)
 - [Informace o autorství](ATTRIBUTION.md)
@@ -57,4 +83,8 @@ Pro komerční použití, včetně prodeje vytištěných krytů, kontaktujte [I
 
 Balicí skript ve složce `tools/` má samostatnou [licenci MIT](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/blob/main/tools/LICENSE). Firmware zatím není součástí projektu. Případný budoucí firmware bude potřebovat výslovně uvedenou softwarovou licenci.
 
-Jde o nezávislý komunitní projekt. HP a iPAQ jsou ochranné známky příslušných vlastníků; projekt není prezentován jako oficiální produkt ani jako jimi podporovaný projekt.
+## Kompatibilita a ochranné známky
+
+Jde o nezávislý komunitní projekt. **HP** a **iPAQ** jsou ochranné známky příslušných vlastníků. Tyto názvy označují zařízení, pro které jsou kryty určeny; kryty nejsou oficiálními produkty HP a projekt nenaznačuje propojení s HP, jeho sponzorství ani podporu. Ochranné známky a loga HP/iPAQ nejsou zahrnuty do licence CC BY-NC 4.0 tohoto projektu.
+
+Zveřejněné [podmínky HP pro ochranné známky](https://www.hp.com/us-en/terms-of-use.html) rozlišují věcné a přesné textové zmínky od použití log a zavádějících tvrzení o propojení s HP.
