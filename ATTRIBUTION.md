@@ -2,9 +2,9 @@
 
 Project / Projekt: **HP iPAQ hx4700 — Thin & Max Battery Covers**
 
-Creator / Autor: **Iron-panda666**
+Creator / Autor: **Iron-panda666 aka Tomket**
 
-Copyright (c) 2026 Iron-panda666
+Copyright (c) 2026 Iron-panda666 aka Tomket
 
 Project source / Zdroj projektu:
 <https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers>

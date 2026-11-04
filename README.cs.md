@@ -62,7 +62,7 @@ Díky komunitě **[r/OldHandhelds](https://www.reddit.com/r/OldHandhelds/)** za 
 
 ## Licence
 
-Modely krytů a popis projektu dávám pod **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.cs)**. Pro nekomerční použití je můžeš tisknout, sdílet i upravovat. Při sdílení uveď autora **Iron-panda666**, zachovej přiložené informace o autorství a licenci, přidej odkaz na licenci a napiš, co jsi změnil. V balíčku najdeš [úplné znění licence](LICENSE) i [informace o autorství](ATTRIBUTION.md).
+Modely krytů a popis projektu dávám pod **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.cs)**. Pro nekomerční použití je můžeš tisknout, sdílet i upravovat. Při sdílení uveď autora **Iron-panda666 aka Tomket**, zachovej přiložené informace o autorství a licenci, přidej odkaz na licenci a napiš, co jsi změnil. V balíčku najdeš [úplné znění licence](LICENSE) i [informace o autorství](ATTRIBUTION.md).
 
 Pokud chceš kryty prodávat nebo projekt využít komerčně, [ozvi se mi přes GitHub](https://github.com/Iron-panda666) a domluvíme samostatnou licenci.
 

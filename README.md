@@ -62,7 +62,7 @@ Thanks to the folks at **[r/OldHandhelds](https://www.reddit.com/r/OldHandhelds/
 
 ## License
 
-The cover models and these project notes are under **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**. You can print, share and modify them for non-commercial use. If you share them, credit **Iron-panda666**, keep the supplied notices, link to the license and say what you've changed. The [full license](LICENSE) and [attribution details](ATTRIBUTION.md) are included.
+The cover models and these project notes are under **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**. You can print, share and modify them for non-commercial use. If you share them, credit **Iron-panda666 aka Tomket**, keep the supplied notices, link to the license and say what you've changed. The [full license](LICENSE) and [attribution details](ATTRIBUTION.md) are included.
 
 If you'd like to sell printed covers or use the project commercially, [contact me on GitHub](https://github.com/Iron-panda666) about a separate license.
 
