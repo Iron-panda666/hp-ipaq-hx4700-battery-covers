@@ -8,12 +8,20 @@ Náhradní kryty baterie pro **HP iPAQ hx4700**, určené k 3D tisku, ve dvou va
 
 | Varianta | Stažení modelu |
 | --- | --- |
-| **Thin** | ZIP se STL zatím není přiložen |
-| **Max** | ZIP se STL zatím není přiložen |
+| **Thin** | [Stáhnout STL ZIP — Thin a Max, v0.1.0](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.0.zip) |
+| **Max** | [Stáhnout STL ZIP — Thin a Max, v0.1.0](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.0.zip) |
 
-STL soubory zatím nejsou v repozitáři. Rozměry, kompatibilní články a parametry tisku budou doplněny k modelům po jejich ověření.
+Společný archiv obsahuje obě varianty krytu a dodané STL díly **Holder**, **Lever** a **Lever cover**. Kompatibilní články, postup sestavení a parametry tisku budou doplněny po ověření.
 
-Modely budou distribuovány v ZIP archivech obsahujících STL soubory, úplné znění licence v souboru `LICENSE` a informace o autorství v `ATTRIBUTION.md`. Dostupné archivy budou ve složce [`releases/`](releases/). Balíček krytu obsahuje pouze mechanické modely; nabíjecí elektronika není jeho součástí.
+Modely jsou distribuovány v ZIP archivech obsahujících STL soubory, úplné znění licence v souboru `LICENSE`, informace o autorství v `ATTRIBUTION.md` a dokumentaci projektu. Archivy a kontrolní součty jsou ve složce [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases). Nabíjecí elektronika není součástí balíčku.
+
+## Náhledy modelu Thin
+
+Dodané snímky z CADu zachycují variantu Thin.
+
+![Kryt Thin — vnitřní pohled](docs/images/Thin01.png)
+
+[Měření šířky](docs/images/Thin02.png) · [Měření detailu](docs/images/Thin03.png)
 
 ## Co je nyní potřeba pro baterii
 
@@ -43,6 +51,6 @@ Modely krytů a dokumentace projektu jsou pod licencí **Creative Commons Uveďt
 
 Pro komerční použití, včetně prodeje vytištěných krytů, kontaktujte [Iron-panda666 na GitHubu](https://github.com/Iron-panda666) a domluvte samostatnou komerční licenci.
 
-Balicí skript ve složce `tools/` má samostatnou [licenci MIT](tools/LICENSE). Firmware zatím není součástí projektu. Případný budoucí firmware bude potřebovat výslovně uvedenou softwarovou licenci.
+Balicí skript ve složce `tools/` má samostatnou [licenci MIT](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/blob/main/tools/LICENSE). Firmware zatím není součástí projektu. Případný budoucí firmware bude potřebovat výslovně uvedenou softwarovou licenci.
 
 Jde o nezávislý komunitní projekt. HP a iPAQ jsou ochranné známky příslušných vlastníků; projekt není prezentován jako oficiální produkt ani jako jimi podporovaný projekt.

@@ -8,12 +8,20 @@
 
 | Variant | Model download |
 | --- | --- |
-| **Thin** | STL archive pending |
-| **Max** | STL archive pending |
+| **Thin** | [Download STL ZIP — Thin & Max, v0.1.0](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.0.zip) |
+| **Max** | [Download STL ZIP — Thin & Max, v0.1.0](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.0.zip) |
 
-STL files have not yet been added to this repository. Dimensions, compatible cells and print settings will be documented alongside the models once confirmed.
+The combined archive contains both cover variants and the supplied **Holder**, **Lever** and **Lever cover** STL files. Compatible cells, assembly instructions and print settings will be documented once confirmed.
 
-Models will be distributed as ZIP archives containing the STL files, the full `LICENSE` text and `ATTRIBUTION.md`. See [`releases/`](releases/) for available model archives. A cover archive contains mechanical models only; it does not include charging electronics.
+Models are distributed as ZIP archives containing the STL files, the full `LICENSE` text, `ATTRIBUTION.md` and project documentation. See [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases) for model archives and checksums. The archive does not include charging electronics.
+
+## Thin model previews
+
+These supplied CAD screenshots show the Thin variant.
+
+![Thin cover — inner view](docs/images/Thin01.png)
+
+[Width measurement](docs/images/Thin02.png) · [Detail measurement](docs/images/Thin03.png)
 
 ## Current battery requirement
 
@@ -43,6 +51,6 @@ The cover models and project documentation are licensed under **Creative Commons
 
 For commercial use, including selling printed covers, contact [Iron-panda666 on GitHub](https://github.com/Iron-panda666) to discuss a separate commercial license.
 
-The packaging script in `tools/` is separately licensed under the [MIT License](tools/LICENSE). No firmware is included. Any firmware added in the future will require an explicit software license.
+The packaging script in `tools/` is separately licensed under the [MIT License](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/blob/main/tools/LICENSE). No firmware is included. Any firmware added in the future will require an explicit software license.
 
 This is an independent community project. HP and iPAQ are trademarks of their respective owners; no affiliation or endorsement is implied.

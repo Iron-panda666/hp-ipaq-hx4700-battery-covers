@@ -26,4 +26,10 @@ hp-ipaq, hx4700, battery-cover, 3d-printing, stl, retrocomputing
 
 The project READMEs are in English and Czech. Full CC BY-NC 4.0 license text is in `LICENSE`; packaging code has its own MIT license in `tools/LICENSE`.
 
-Publication and model archives are pending. Add the final Thin and Max STL inputs, build the ZIP archives using `tools/Build-ModelArchive.ps1`, and update both README download tables before announcing model availability.
+Repository URL:
+
+<https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers>
+
+Visibility: public.
+
+The initial combined model archive is `releases/hp-ipaq-hx4700-Thin-Max-v0.1.0.zip`. It includes all five supplied STL files, licensing, documentation and Thin previews. Use `tools/Build-ModelArchive.ps1` for future model archives and update both README download tables when publishing a new version.

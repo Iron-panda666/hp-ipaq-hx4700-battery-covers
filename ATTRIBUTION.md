@@ -6,6 +6,9 @@ Creator / Autor: **Iron-panda666**
 
 Copyright (c) 2026 Iron-panda666
 
+Project source / Zdroj projektu:
+<https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers>
+
 Creator profile and commercial licensing contact / Profil autora a kontakt pro komerční licenci:
 <https://github.com/Iron-panda666>
 

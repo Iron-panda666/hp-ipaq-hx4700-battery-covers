@@ -2,7 +2,7 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory)]
-    [ValidateSet('Thin', 'Max')]
+    [ValidateSet('Thin', 'Max', 'Thin-Max')]
     [string]$Variant,
 
     [Parameter(Mandatory)]
@@ -12,12 +12,20 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $projectRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
-$sourceDir = Join-Path $projectRoot "models/$Variant"
+$modelsRoot = Join-Path $projectRoot 'models'
+$sourceDir = if ($Variant -eq 'Thin-Max') { $modelsRoot } else { Join-Path $modelsRoot $Variant }
 if (-not (Test-Path -LiteralPath $sourceDir -PathType Container)) {
     throw "Missing STL input folder: $sourceDir"
 }
 $models = @(Get-ChildItem -LiteralPath $sourceDir -File -Recurse |
-    Where-Object { $_.Extension -ieq '.stl' })
+    Where-Object { $_.Extension -ieq '.stl' } | Sort-Object FullName)
+if ($Variant -eq 'Thin-Max') {
+    foreach ($folder in @('Thin', 'Max', 'Shared')) {
+        if (@($models | Where-Object { $_.Directory.Name -eq $folder }).Count -eq 0) {
+            throw "Combined archive requires STL files in models/$folder."
+        }
+    }
+}
 if ($models.Count -eq 0) {
     throw "No STL files found for $Variant. An empty model archive will not be created."
 }
@@ -48,8 +56,14 @@ try {
         $entries += @{ Path = (Join-Path $projectRoot $name); Name = $name }
     }
     foreach ($model in $models) {
-        $relativeName = $model.FullName.Substring($sourceDir.Length + 1).Replace('\', '/')
-        $entries += @{ Path = $model.FullName; Name = "models/$Variant/$relativeName" }
+        $relativeName = $model.FullName.Substring($modelsRoot.Length + 1).Replace('\', '/')
+        $entries += @{ Path = $model.FullName; Name = "models/$relativeName" }
+    }
+    $imageDir = Join-Path $projectRoot 'docs/images'
+    if (Test-Path -LiteralPath $imageDir -PathType Container) {
+        foreach ($preview in @(Get-ChildItem -LiteralPath $imageDir -File -Filter '*.png' | Sort-Object Name)) {
+            $entries += @{ Path = $preview.FullName; Name = "docs/images/$($preview.Name)" }
+        }
     }
     foreach ($item in $entries) {
         $entry = $archive.CreateEntry($item.Name, [IO.Compression.CompressionLevel]::Optimal)
