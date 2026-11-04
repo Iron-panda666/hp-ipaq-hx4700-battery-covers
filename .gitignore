@@ -1,0 +1,12 @@
+# Local STL inputs are distributed in ZIP archives.
+/models/**/*.stl
+/models/**/*.STL
+/models/**/*.Stl
+
+# Temporary packaging output
+/.package-*/
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db
+*.tmp
