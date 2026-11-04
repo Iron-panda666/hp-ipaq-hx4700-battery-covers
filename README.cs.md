@@ -12,7 +12,7 @@ Tohle jsou moje náhradní kryty baterie pro **HP iPAQ hx4700** ve dvou verzích
 
 V jednom ZIPu jsou oba kryty a díly **Holder**, **Lever** a **Lever cover**, celkem pět STL souborů. Přibalil jsem i licenci, popis projektu a náhledy Thin. Nabíjecí elektronika součástí balíčku není.
 
-Starší balíčky a kontrolní součty najdeš ve složce [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases). Ověřené možnosti článků, úplný návod na sestavení a podrobný tiskový profil doplním, až budou vyřešené.
+Balíček a jeho kontrolní součet najdeš ve složce [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases). Ověřené možnosti článků, úplný návod na sestavení a podrobný tiskový profil doplním, až budou vyřešené.
 
 ## Jak vypadá Thin
 

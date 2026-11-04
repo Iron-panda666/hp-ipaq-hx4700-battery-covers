@@ -2,11 +2,7 @@
 
 [Download Thin & Max v0.1.3](hp-ipaq-hx4700-Thin-Max-v0.1.3.zip)
 
-v0.1.3 rewrites both READMEs in a more personal style, uses one download link for the combined Thin + Max ZIP and adds a thank-you to r/OldHandhelds. Technical details, STL files and license terms are unchanged. The [v0.1.2 archive](hp-ipaq-hx4700-Thin-Max-v0.1.2.zip) remains available.
-
-v0.1.2 documents the unfinished prototype and known sharp corner, provisional PCB/connector mounting space, FDM printing on a Bambu Lab X1C with a 0.2 mm nozzle, the SLA resin printing suggestion, extension spring requirements and third-party trademark/license scope. All STL files are unchanged. The previous [v0.1.1 archive](hp-ipaq-hx4700-Thin-Max-v0.1.1.zip) remains available.
-
-v0.1.1 updates the English and Czech documentation with the provisional Max electronics placement, PCB design progress, five-board cost estimates and the plan to use off-the-shelf modules. All STL files are unchanged from [v0.1.0](hp-ipaq-hx4700-Thin-Max-v0.1.0.zip).
+Only the latest model archive is kept here.
 
 This combined archive contains five original STL files:
 

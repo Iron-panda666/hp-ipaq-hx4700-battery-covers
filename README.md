@@ -12,7 +12,7 @@ These are my replacement battery covers for the **HP iPAQ hx4700**, in two versi
 
 One ZIP contains both covers, plus the **Holder**, **Lever** and **Lever cover** parts — five STL files in total. The license, project notes and Thin previews are included too. The charging electronics aren't part of the download.
 
-Older downloads and checksums are in [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases). I'll add the confirmed cell options, full assembly instructions and a detailed print profile as the project develops.
+The download and its checksum are in [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases). I'll add the confirmed cell options, full assembly instructions and a detailed print profile as the project develops.
 
 ## A look at Thin
 
