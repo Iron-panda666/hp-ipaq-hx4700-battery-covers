@@ -1,90 +1,63 @@
 # HP iPAQ hx4700 — kryty baterie Thin a Max
 
-[English](README.md) · [Licence: CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.cs)
+[English](README.md)
 
-Náhradní kryty baterie pro **HP iPAQ hx4700**, určené k 3D tisku, ve dvou variantách: **Thin** a **Max**. Součástí projektu je také vývoj nabíjecího řešení.
+Tohle jsou moje náhradní kryty baterie pro **HP iPAQ hx4700** ve dvou verzích: **Thin** a **Max**. Kromě krytů pracuji i na nabíjecí elektronice.
 
-## Stav vývoje — nejde o finální verzi
+**Zatím to není finální verze.** Kryt má ještě pár much, třeba ostrý roh, který potřebuje doladit. Prostor pro elektroniku se nejspíš také změní podle toho, kam nakonec přijdou body pro uchycení PCB a konektor. S dalšími úpravami krytu i rozložení elektroniky tedy ještě počítám.
 
-**Jde o rozpracovaný prototyp, nikoli o dokončený návrh.** Má ještě několik much:
+## Stažení
 
-- Ostrý roh ještě potřebuje doladit.
-- Prostor pro elektroniku se pravděpodobně změní podle bodů pro připevnění PCB a umístění konektoru.
-- Geometrie krytu i uspořádání elektroniky se mohou v dalších revizích změnit.
+**[Stáhnout Thin + Max — ZIP se STL, v0.1.3](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.3.zip)**
 
-## Varianty krytů a stažení
+V jednom ZIPu jsou oba kryty a díly **Holder**, **Lever** a **Lever cover**, celkem pět STL souborů. Přibalil jsem i licenci, popis projektu a náhledy Thin. Nabíjecí elektronika součástí balíčku není.
 
-| Varianta | Stažení modelu |
-| --- | --- |
-| **Thin** | [Stáhnout STL ZIP — Thin a Max, v0.1.2](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.2.zip) |
-| **Max** | [Stáhnout STL ZIP — Thin a Max, v0.1.2](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.2.zip) |
+Starší balíčky a kontrolní součty najdeš ve složce [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases). Ověřené možnosti článků, úplný návod na sestavení a podrobný tiskový profil doplním, až budou vyřešené.
 
-Společný archiv obsahuje obě varianty krytu a dodané STL díly **Holder**, **Lever** a **Lever cover**. Kompatibilní články, úplný postup sestavení a podrobný tiskový profil budou doplněny po ověření.
+## Jak vypadá Thin
 
-Modely jsou distribuovány v ZIP archivech obsahujících STL soubory, úplné znění licence v souboru `LICENSE`, informace o autorství v `ATTRIBUTION.md` a dokumentaci projektu. Archivy a kontrolní součty jsou ve složce [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases). Nabíjecí elektronika není součástí balíčku.
-
-## Náhledy modelu Thin
-
-Dodané snímky z CADu zachycují variantu Thin.
-
-![Kryt Thin — vnitřní pohled](docs/images/Thin01.png)
+![Kryt Thin — pohled zevnitř](docs/images/Thin01.png)
 
 [Měření šířky](docs/images/Thin02.png) · [Měření detailu](docs/images/Thin03.png)
 
-## Tisk
+## Tisk a pružina
 
-Projekt jsem tiskl metodou **FDM na tiskárně Bambu Lab X1C s tryskou o průměru 0,2 mm**. Pro jemnější povrch a detaily, zejména u drobných dílků, může být vhodnější **SLA resinová tiskárna**.
+Díly jsem tiskl metodou **FDM na Bambu Lab X1C s tryskou o průměru 0,2 mm**. Pro jemnější povrch a drobné detaily bych zvážil **SLA resinovou tiskárnu**.
 
-## Potřebná tažná pružina
+K sestavení budeš potřebovat také malou **tažnou pružinu (extension spring)** s těmito parametry:
 
-K vytištěným dílům je potřeba malá **tažná pružina (extension spring)**.
-
-| Parametr | Požadavek |
+| Co hledat | Požadavek |
 | --- | --- |
-| Vnější průměr | **Nejvýše 1,8 mm; ideálně 1,5 mm** |
+| Vnější průměr | **Nejvýše 1,8 mm, ideálně 1,5 mm** |
 | Celková délka | **4–5 mm** |
-| Zakončení | **Uzavřená očka na obou koncích; nikoli otevřené háčky** |
-| Poloha oček | **Obě očka vystředěná v ose pružiny**, nikoli vyosená do strany |
+| Zakončení | **Uzavřená očka na obou koncích, ne otevřené háčky** |
+| Poloha oček | **Obě očka vystředěná v ose pružiny**, ne vyosená do strany |
 | Průměr drátu | Přibližně **0,2 mm** |
 
-## Co je nyní potřeba pro baterii
+## Baterie a nabíjení
 
-**Prozatím je nutné použít původní originální BMS / elektroniku z originální baterie HP iPAQ hx4700.**
+**Prozatím je potřeba použít původní BMS / elektroniku z originální baterie HP iPAQ hx4700.** Náhradu této desky zatím nemám zveřejněnou.
 
-Vytištěný kryt tuto desku nenahrazuje. Náhrada BMS ani kompletní návrh nové elektroniky baterie zatím nejsou součástí projektu.
+U varianty **Max** bude žlutě označené místo v návrhu nejspíš sloužit pro **nabíjecí PCB, modul USB-C PD a konektor**. Přesné rozmístění ještě není definitivní.
 
-## Nabíjecí elektronika — ve vývoji
+Návrh vlastní PCB už mám víceméně vyřešený, s trochou pomoci od **Claude a Codexu**. Jenže výroba a osazení pouhých **pěti desek** vychází podle zvolené služby na **185–555 USD (asi 165–495 EUR)**. Za pět desek je to upřímně dost.
 
-Na nabíjecí elektronice se pracuje. U varianty **Max** bude prostor v návrhu označený žlutě pravděpodobně sloužit pro **nabíjecí PCB, modul USB-C PD a konektor**. Toto umístění je zatím předběžné.
+Prozatím tedy použiji **hotové moduly a součástky z AliExpressu, Amazonu, Mouseru, DigiKey nebo TME**. Konečný seznam součástek a zapojení ještě zveřejněné nejsou.
 
-Návrh vlastní PCB už mám víceméně vyřešený, s trochou pomoci od **Claude a Codexu**. Orientační ceny výroby a osazení pouhých **pěti desek** ale vycházejí na **185–555 USD (přibližně 165–495 EUR)** podle zvolené služby osazení. Za pouhých pět desek je to dost vysoká cena.
+U vlastní desky zvažuji **USB-C Power Delivery (PD)** a blokování souběžného nabíjení: při připojení **22pinového konektoru** by se nabíjení přes USB-C vypnulo a při aktivním nabíjení přes USB-C by se blokovalo nabíjení přes 22pin. Nabíjelo by se vždy jen z jednoho vstupu. Prioritu vstupů a chování při přepínání ještě musím dořešit.
 
-Prozatím proto použiji **hotové moduly a součástky z AliExpressu, Amazonu, Mouseru, DigiKey nebo TME**. Konečný výběr modulů a jejich zapojení zatím nejsou zveřejněny.
+Na tomhle ještě pracuji. PD, přepínání vstupů, schéma ani ověřené elektrické parametry zatím nejsou k dispozici.
 
-U vlastní desky zvažuji podporu **USB-C Power Delivery (PD)** a **vzájemné blokování nabíjení přes USB-C a 22pinový konektor iPAQu**:
+## Poděkování
 
-- Při připojení 22pinového konektoru by se nabíjecí větev USB-C vypnula.
-- Při aktivním nabíjení přes USB-C by se blokovalo nabíjení přes 22pinový konektor.
-- Vždy by byl aktivní pouze jeden nabíjecí vstup. Priorita vstupů a chování při přepínání ještě nejsou stanoveny.
+Díky komunitě **[r/OldHandhelds](https://www.reddit.com/r/OldHandhelds/)** za podporu tohohle projektu! 🙂
 
-Jde o zvažované cíle vývoje. USB-C PD ani přepínání vstupů zatím nejsou hotové funkce. Schéma, seznam součástek a ověřené elektrické parametry budou doplněny po dokončení návrhu.
+## Licence
 
-## Licence a autorství
+Modely krytů a popis projektu dávám pod **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.cs)**. Pro nekomerční použití je můžeš tisknout, sdílet i upravovat. Při sdílení uveď autora **Iron-panda666**, zachovej přiložené informace o autorství a licenci, přidej odkaz na licenci a napiš, co jsi změnil. V balíčku najdeš [úplné znění licence](LICENSE) i [informace o autorství](ATTRIBUTION.md).
 
-Modely krytů a dokumentace projektu jsou pod licencí **Creative Commons Uveďte původ–Neužívejte komerčně 4.0 Mezinárodní (CC BY-NC 4.0)**. Je možné je sdílet a upravovat pro nekomerční účely za podmínek licence. Při sdílení uveďte autora **Iron-panda666**, zachovejte dodané informace o autorství a licenci, připojte odkaz na licenci a označte provedené změny.
+Pokud chceš kryty prodávat nebo projekt využít komerčně, [ozvi se mi přes GitHub](https://github.com/Iron-panda666) a domluvíme samostatnou licenci.
 
-Licence se vztahuje pouze na autorská a obdobná práva, která je autor projektu oprávněn licencovat. Neuděluje práva k cizím ochranným známkám, logům ani patentům. Viz [článek 2(b) licence](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en#s2b).
+Jde o můj vlastní nezávislý projekt, ne o oficiální produkt HP ani projekt s jeho podporou. Názvy **HP** a **iPAQ** používám proto, aby bylo jasné, pro jaké zařízení kryty jsou; patří svým vlastníkům. Licence pokrývá jen práva, která mohu udělit já. Nedává práva k cizím ochranným známkám, logům ani patentům. Podrobnosti jsou v [rozsahu licence](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en#s2b) a [podmínkách HP](https://www.hp.com/us-en/terms-of-use.html).
 
-- [Úplné znění licence](LICENSE)
-- [České shrnutí licence](https://creativecommons.org/licenses/by-nc/4.0/deed.cs)
-- [Informace o autorství](ATTRIBUTION.md)
-
-Pro komerční použití, včetně prodeje vytištěných krytů, kontaktujte [Iron-panda666 na GitHubu](https://github.com/Iron-panda666) a domluvte samostatnou komerční licenci.
-
-Balicí skript ve složce `tools/` má samostatnou [licenci MIT](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/blob/main/tools/LICENSE). Firmware zatím není součástí projektu. Případný budoucí firmware bude potřebovat výslovně uvedenou softwarovou licenci.
-
-## Kompatibilita a ochranné známky
-
-Jde o nezávislý komunitní projekt. **HP** a **iPAQ** jsou ochranné známky příslušných vlastníků. Tyto názvy označují zařízení, pro které jsou kryty určeny; kryty nejsou oficiálními produkty HP a projekt nenaznačuje propojení s HP, jeho sponzorství ani podporu. Ochranné známky a loga HP/iPAQ nejsou zahrnuty do licence CC BY-NC 4.0 tohoto projektu.
-
-Zveřejněné [podmínky HP pro ochranné známky](https://www.hp.com/us-en/terms-of-use.html) rozlišují věcné a přesné textové zmínky od použití log a zavádějících tvrzení o propojení s HP.
+Balicí skript ve složce `tools/` má vlastní [licenci MIT](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/blob/main/tools/LICENSE). Firmware tu zatím není; pokud přibude, dostane samostatnou softwarovou licenci.

@@ -1,6 +1,8 @@
 # Model archives
 
-[Download Thin & Max v0.1.2](hp-ipaq-hx4700-Thin-Max-v0.1.2.zip)
+[Download Thin & Max v0.1.3](hp-ipaq-hx4700-Thin-Max-v0.1.3.zip)
+
+v0.1.3 rewrites both READMEs in a more personal style, uses one download link for the combined Thin + Max ZIP and adds a thank-you to r/OldHandhelds. Technical details, STL files and license terms are unchanged. The [v0.1.2 archive](hp-ipaq-hx4700-Thin-Max-v0.1.2.zip) remains available.
 
 v0.1.2 documents the unfinished prototype and known sharp corner, provisional PCB/connector mounting space, FDM printing on a Bambu Lab X1C with a 0.2 mm nozzle, the SLA resin printing suggestion, extension spring requirements and third-party trademark/license scope. All STL files are unchanged. The previous [v0.1.1 archive](hp-ipaq-hx4700-Thin-Max-v0.1.1.zip) remains available.
 
@@ -29,7 +31,7 @@ Each model archive will contain:
 Add the final models to `models/Thin/`, `models/Max/` and `models/Shared/`, then run from the repository root:
 
 ```powershell
-./tools/Build-ModelArchive.ps1 -Variant Thin-Max -Version v0.1.3
+./tools/Build-ModelArchive.ps1 -Variant Thin-Max -Version v0.1.4
 ```
 
 Use the actual release version. The script requires real, non-empty STL inputs and refuses to overwrite an existing archive. Update the download tables in both READMEs when adding a release.

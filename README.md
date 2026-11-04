@@ -1,90 +1,63 @@
 # HP iPAQ hx4700 — Thin & Max Battery Covers
 
-[Česky](README.cs.md) · [License: CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+[Česky](README.cs.md)
 
-3D-printable replacement battery covers for the **HP iPAQ hx4700**, in two variants: **Thin** and **Max**. The project also includes development plans for a charging solution.
+These are my replacement battery covers for the **HP iPAQ hx4700**, in two versions: **Thin** and **Max**. I'm also working on a charging solution to go with them.
 
-## Development status — not a final version
+**This isn't the final version yet.** There are still a few things to sort out, including a sharp corner. The space for the electronics will probably change once I've settled on the PCB mounting points and connector position, so expect more changes to the cover and layout.
 
-**This is a work-in-progress prototype, not a finished design.** It still has a few rough edges:
+## Download
 
-- A sharp corner still needs to be refined.
-- The electronics space will probably change to accommodate the PCB mounting points and connector placement.
-- The enclosure geometry and electronics layout may change in future revisions.
+**[Download Thin + Max — STL ZIP, v0.1.3](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.3.zip)**
 
-## Cover variants and downloads
+One ZIP contains both covers, plus the **Holder**, **Lever** and **Lever cover** parts — five STL files in total. The license, project notes and Thin previews are included too. The charging electronics aren't part of the download.
 
-| Variant | Model download |
-| --- | --- |
-| **Thin** | [Download STL ZIP — Thin & Max, v0.1.2](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.2.zip) |
-| **Max** | [Download STL ZIP — Thin & Max, v0.1.2](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.2.zip) |
+Older downloads and checksums are in [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases). I'll add the confirmed cell options, full assembly instructions and a detailed print profile as the project develops.
 
-The combined archive contains both cover variants and the supplied **Holder**, **Lever** and **Lever cover** STL files. Compatible cells, complete assembly instructions and a detailed print profile will be documented once confirmed.
+## A look at Thin
 
-Models are distributed as ZIP archives containing the STL files, the full `LICENSE` text, `ATTRIBUTION.md` and project documentation. See [`releases/`](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/tree/main/releases) for model archives and checksums. The archive does not include charging electronics.
-
-## Thin model previews
-
-These supplied CAD screenshots show the Thin variant.
-
-![Thin cover — inner view](docs/images/Thin01.png)
+![Thin cover — inside view](docs/images/Thin01.png)
 
 [Width measurement](docs/images/Thin02.png) · [Detail measurement](docs/images/Thin03.png)
 
-## Printing
+## Printing and the spring
 
-I printed the project using **FDM on a Bambu Lab X1C with a 0.2 mm nozzle**. For a finer finish, especially on the small parts, an **SLA resin printer** may be a better choice.
+I printed the parts on a **Bambu Lab X1C using FDM and a 0.2 mm nozzle**. For a cleaner finish on the tiny parts, I'd consider an **SLA resin printer**.
 
-## Required extension spring
+You'll also need a small **extension spring** with the following dimensions and ends:
 
-A small **extension spring** is required in addition to the printed parts.
-
-| Property | Requirement |
+| What to look for | Requirement |
 | --- | --- |
-| Outer diameter | **1.8 mm maximum; 1.5 mm preferred** |
+| Outer diameter | **1.8 mm maximum; ideally 1.5 mm** |
 | Overall length | **4–5 mm** |
-| End style | **Closed eyes (loops) at both ends; no open hooks** |
-| Eye alignment | **Both eyes centered on the spring axis**, rather than offset to one side |
-| Wire diameter | Approximately **0.2 mm** |
+| Ends | **Closed eyes (loops) at both ends, not open hooks** |
+| Eye position | **Both eyes centered on the spring axis**, not offset to one side |
+| Wire diameter | About **0.2 mm** |
 
-## Current battery requirement
+## Battery and charging
 
-**For now, the original BMS / battery electronics board from an original HP iPAQ hx4700 battery must be reused.**
+**For now, you'll need to reuse the original BMS / electronics board from an original HP iPAQ hx4700 battery.** I haven't released a replacement for that board.
 
-The printed cover does not replace that board. A replacement BMS or a complete replacement battery electronics design is not provided at this stage.
+For **Max**, the yellow-marked area in the design will probably be home to the **charging PCB, USB-C PD module and connector**. The exact arrangement may still change.
 
-## Charging electronics — work in progress
+I've more or less got the custom PCB design worked out, with a bit of help from **Claude and Codex**. But getting just **five boards made and assembled** comes to **US$185–555 (about €165–495)**, depending on the assembly service. Pretty steep for five boards, honestly.
 
-The charging electronics are under development. For the **Max** cover, the area marked in yellow in the design will probably house the **charging PCB, USB-C PD module and connector**. This placement is still provisional.
+So for now, I'll go with **off-the-shelf modules and parts from AliExpress, Amazon, Mouser, DigiKey or TME**. I haven't published the final parts list or wiring yet.
 
-I've more or less worked out the custom PCB design, with a bit of help from **Claude and Codex**. However, the current estimates for getting just **five boards made and assembled** range from **US$185 to US$555 (about €165–495)**, depending on the assembly service. That is a steep price for only five boards.
+For a custom board, I'm considering **USB-C Power Delivery (PD)** and a way to keep the two charging inputs from being active together: connecting the **22-pin connector** would disable USB-C charging, and active USB-C charging would block charging through the 22-pin connector. Only one input would charge at a time. I still need to settle the priority and switching behavior.
 
-So for now, I'll use **off-the-shelf modules and parts from AliExpress, Amazon, Mouser, DigiKey or TME**. The final module selection and wiring have not been published yet.
+I'm still working on this. PD, input switching, schematics and verified electrical specifications aren't available yet.
 
-For the custom board, I'm considering **USB-C Power Delivery (PD)** and **mutual exclusion between USB-C charging and the iPAQ's 22-pin connector**:
+## Thanks
 
-- When the 22-pin connector is connected, the USB-C charging path would be disabled.
-- When USB-C charging is active, charging through the 22-pin connector would be blocked.
-- Only one charging input would be active at a time. Priority and switching behavior are still to be defined.
+Thanks to the folks at **[r/OldHandhelds](https://www.reddit.com/r/OldHandhelds/)** for supporting this project! 🙂
 
-These are development goals, not features implemented in the current release. USB-C PD, input switching, a circuit diagram, a bill of materials and verified electrical specifications are not available yet.
+## License
 
-## License and attribution
+The cover models and these project notes are under **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**. You can print, share and modify them for non-commercial use. If you share them, credit **Iron-panda666**, keep the supplied notices, link to the license and say what you've changed. The [full license](LICENSE) and [attribution details](ATTRIBUTION.md) are included.
 
-The cover models and project documentation are licensed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**. You may share and adapt them for non-commercial purposes under the license terms. When sharing, credit **Iron-panda666**, retain the supplied notices, link to the license and indicate changes.
+If you'd like to sell printed covers or use the project commercially, [contact me on GitHub](https://github.com/Iron-panda666) about a separate license.
 
-This license applies only to copyright and similar rights that the project author is entitled to license. It does not grant rights to third-party trademarks, logos or patents. See [Section 2(b) of the license](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en#s2b).
+This is my own independent project, not an official HP product or something endorsed by HP. **HP** and **iPAQ** are mentioned to identify the device the covers fit; the names belong to their respective owners. The project license only covers rights I can license — it doesn't grant rights to third-party trademarks, logos or patents. See the [license scope](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en#s2b) and [HP's trademark terms](https://www.hp.com/us-en/terms-of-use.html).
 
-- [Full license text](LICENSE)
-- [License summary](https://creativecommons.org/licenses/by-nc/4.0/)
-- [Attribution information](ATTRIBUTION.md)
-
-For commercial use, including selling printed covers, contact [Iron-panda666 on GitHub](https://github.com/Iron-panda666) to discuss a separate commercial license.
-
-The packaging script in `tools/` is separately licensed under the [MIT License](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/blob/main/tools/LICENSE). No firmware is included. Any firmware added in the future will require an explicit software license.
-
-## Compatibility and trademarks
-
-This is an independent community project. **HP** and **iPAQ** are trademarks of their respective owners. These names identify the device the covers are intended to fit; the covers are not official HP products, and no affiliation, sponsorship or endorsement is implied. HP/iPAQ trademarks and logos are not covered by this project's CC BY-NC 4.0 license.
-
-HP's published [trademark terms](https://www.hp.com/us-en/terms-of-use.html) distinguish fair, accurate textual references from logo use and misleading claims of affiliation.
+The packaging script in `tools/` has its own [MIT license](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/blob/main/tools/LICENSE). There's no firmware in this project yet; any future firmware will need its own software license.
