@@ -2,13 +2,16 @@
 
 [Česky](README.cs.md)
 
+![Status: work in progress](https://img.shields.io/badge/status-work_in_progress-orange)
+[![Models license: CC BY-NC 4.0](https://img.shields.io/badge/models-CC_BY--NC_4.0-lightgrey)](LICENSE)
+
 These are my replacement battery covers for the **HP iPAQ hx4700**, in two versions: **Thin** and **Max**. I'm also working on a charging solution to go with them.
 
 **This isn't the final version yet.** There are still a few things to sort out, including a sharp corner. The space for the electronics will probably change once I've settled on the PCB mounting points and connector position, so expect more changes to the cover and layout.
 
 ## Download
 
-**[Download Thin + Max — STL ZIP, v0.1.3](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.3.zip)**
+[![Download Thin + Max — STL ZIP, v0.1.3](https://img.shields.io/badge/STL_ZIP-v0.1.3-blue)](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.3.zip)
 
 One ZIP contains both covers, plus the **Holder**, **Lever** and **Lever cover** parts — five STL files in total. The license, project notes and Thin and Max previews are included too. The charging electronics aren't part of the download.
 

@@ -2,13 +2,16 @@
 
 [English](README.md)
 
+![Stav: ve vývoji](https://img.shields.io/badge/status-work_in_progress-orange)
+[![Licence modelů: CC BY-NC 4.0](https://img.shields.io/badge/models-CC_BY--NC_4.0-lightgrey)](LICENSE)
+
 Tohle jsou moje náhradní kryty baterie pro **HP iPAQ hx4700** ve dvou verzích: **Thin** a **Max**. Kromě krytů pracuji i na nabíjecí elektronice.
 
 **Zatím to není finální verze.** Kryt má ještě pár much, třeba ostrý roh, který potřebuje doladit. Prostor pro elektroniku se nejspíš také změní podle toho, kam nakonec přijdou body pro uchycení PCB a konektor. S dalšími úpravami krytu i rozložení elektroniky tedy ještě počítám.
 
 ## Stažení
 
-**[Stáhnout Thin + Max — ZIP se STL, v0.1.3](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.3.zip)**
+[![Stáhnout Thin + Max — ZIP se STL, v0.1.3](https://img.shields.io/badge/STL_ZIP-v0.1.3-blue)](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/raw/refs/heads/main/releases/hp-ipaq-hx4700-Thin-Max-v0.1.3.zip)
 
 V jednom ZIPu jsou oba kryty a díly **Holder**, **Lever** a **Lever cover**, celkem pět STL souborů. Přibalil jsem i licenci, popis projektu a náhledy Thin a Max. Nabíjecí elektronika součástí balíčku není.
 
