@@ -47,6 +47,8 @@ K sestavení budeš potřebovat také malou **tažnou pružinu (extension spring
 
 [Tažné pružiny na AliExpressu](https://www.aliexpress.com/item/1005009679520375.html)
 
+Po doručení z Číny vyzkouším pružiny **0,2 × 1,5 × 5 mm** (průměr drátu × vnější průměr × celková délka).
+
 ## Baterie a nabíjení
 
 **Prozatím je potřeba použít původní BMS / elektroniku z originální baterie HP iPAQ hx4700.** Náhradu této desky zatím nemám zveřejněnou.

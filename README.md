@@ -47,6 +47,8 @@ You'll also need a small **extension spring** with the following dimensions and 
 
 [Extension springs on AliExpress](https://www.aliexpress.com/item/1005009679520375.html)
 
+I'll test the **0.2 × 1.5 × 5 mm** springs (wire diameter × outer diameter × overall length) when they arrive from China.
+
 ## Battery and charging
 
 **For now, you'll need to reuse the original BMS / electronics board from an original HP iPAQ hx4700 battery.** I haven't released a replacement for that board.
