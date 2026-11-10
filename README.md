@@ -50,4 +50,6 @@ I'd like the custom board to support USB-C Power Delivery and let only one charg
 
 If you print one and something fits poorly, open an issue with the cover version, print settings and a photo of where it catches. Thanks to the folks at r/OldHandhelds for supporting the project. [Report a problem or suggest a change](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/issues) · [r/OldHandhelds](https://www.reddit.com/r/OldHandhelds/)
 
+I also keep an eye on `#ce-general` in the Windows CE Devices section on Discord. Feel free to ask me about the covers there.
+
 The models and notes are CC BY-NC 4.0. For non-commercial sharing or modifications, credit Iron-panda666 aka Tomket, keep the notices, link to the license and say what you changed. Contact me on GitHub about commercial use. HP and iPAQ identify the compatible device. This is an independent project and the license covers my own work. Third-party trademarks, logos and patents remain outside its scope. The packaging script is under MIT. [Model license](LICENSE) · [Attribution](ATTRIBUTION.md) · [Script license](https://github.com/Iron-panda666/hp-ipaq-hx4700-battery-covers/blob/main/tools/LICENSE) · [Contact](https://github.com/Iron-panda666)
